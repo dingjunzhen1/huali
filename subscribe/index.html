@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人黄历 · 订阅源</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0; padding: 40px 20px 64px;
+    font: 15px/1.7 -apple-system, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f6f8fb; color: #1c2430;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  .sub { color: #64707f; margin: 0 0 24px; font-size: 14px; }
+  .card {
+    background: #fff; border: 1px solid #dfe6ef; border-radius: 14px;
+    padding: 18px 20px; margin-bottom: 14px; box-shadow: 0 2px 0 #e8eef6;
+  }
+  .card h2 { font-size: 15px; margin: 0 0 10px; color: #2b3644; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin: 6px 0; }
+  a { color: #0a5fd6; text-decoration: none; word-break: break-all; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: #f1f4f9; border: 1px solid #e2e8f1; border-radius: 5px;
+    padding: 1px 5px; font-size: 13px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .note { color: #64707f; font-size: 13px; margin-top: 10px; }
+  .tag { display: inline-block; font-size: 12px; color: #64707f; border: 1px solid #dfe6ef;
+         border-radius: 999px; padding: 1px 8px; margin-left: 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>个人黄历 · 订阅源</h1>
+  <p class="sub">2026-01-01 ~ 2036-12-31 · 每天一条全天事件（农历 / 干支 / 宜忌 / 冲煞）</p>
+
+  <div class="card">
+    <h2>推荐：按年订阅 <span class="tag">体积小、刷新快</span></h2>
+    <ul>
+      <li><a href="personal_almanac_2026.ics">personal_almanac_2026.ics</a></li>
+      <li><a href="personal_almanac_2027.ics">personal_almanac_2027.ics</a></li>
+      <li><a href="personal_almanac_2028.ics">personal_almanac_2028.ics</a></li>
+      <li><a href="personal_almanac_2029.ics">personal_almanac_2029.ics</a></li>
+      <li><a href="personal_almanac_2030.ics">personal_almanac_2030.ics</a></li>
+      <li><a href="personal_almanac_2031.ics">personal_almanac_2031.ics</a></li>
+      <li><a href="personal_almanac_2032.ics">personal_almanac_2032.ics</a></li>
+      <li><a href="personal_almanac_2033.ics">personal_almanac_2033.ics</a></li>
+      <li><a href="personal_almanac_2034.ics">personal_almanac_2034.ics</a></li>
+      <li><a href="personal_almanac_2035.ics">personal_almanac_2035.ics</a></li>
+      <li><a href="personal_almanac_2036.ics">personal_almanac_2036.ics</a></li>
+    </ul>
+    <p class="note">订阅时直接把某一行的完整网址粘贴到「添加订阅日历」的服务器栏即可。</p>
+  </div>
+
+  <div class="card">
+    <h2>全量单文件 <span class="tag">4018 事件 / 约 2.4 MB</span></h2>
+    <ul>
+      <li><a href="personal_almanac.ics">personal_almanac.ics</a></li>
+    </ul>
+    <p class="note">一次订阅全部年份更方便，但首次抓取较慢，手机端滚动也更重。</p>
+  </div>
+
+  <div class="card">
+    <h2>怎么在 iPhone 上订阅</h2>
+    <ul>
+      <li>日历 App → 底部「日历」→ 添加日历 → <b>添加订阅日历</b></li>
+      <li>服务器一栏粘贴 <code>https://你的域名/personal_almanac_2026.ics</code></li>
+      <li>下一步 → 命名「黄历 2026」→ 存储</li>
+    </ul>
+    <p class="note">这个页面只用于确认部署成功，也可以直接在 Safari 里点开某个 ics 走一次性导入。</p>
+  </div>
+</div>
+</body>
+</html>
